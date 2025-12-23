@@ -2,7 +2,7 @@ class Obsi < Formula
   desc "CLI for Obsidian note-taking (Quick Notes Fork)"
   homepage "https://github.com/avi8or/obsidian-cli-quick-notes"
   url "https://github.com/avi8or/obsidian-cli-quick-notes/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "ca994609750b980fa3551fb2845f8a42d8cd7a104fd808010861e6160184122e"
+  sha256 "3e166a1fb5ad0d517976b5cd1943c0e221d80e0c95364a0ec2f4fa3e0a842c74"
   license "MIT"
   version "0.3.1"
 
