@@ -1,10 +1,10 @@
 class Obsi < Formula
   desc "CLI for Obsidian note-taking (Quick Notes Fork)"
   homepage "https://github.com/avi8or/obsidian-cli-quick-notes"
-  url "https://github.com/avi8or/obsidian-cli-quick-notes/archive/refs/tags/v0.3.2.tar.gz"
-  sha256 "9485b3c7d7e44cfdb9516d8403ffc5fb8d15ca8d8b1810da2c6f8a9943202a56"
+  url "https://github.com/avi8or/obsidian-cli-quick-notes/archive/refs/tags/v0.3.3.tar.gz"
+  sha256 "1dcd168726d9a84647f938dac4e87f808329d2ca0bfb988141e616934044d48f"
   license "MIT"
-  version "0.3.2"
+  version "0.3.3"
 
   depends_on "go" => :build
 
@@ -14,6 +14,6 @@ class Obsi < Formula
   end
 
   test do
-    assert_match "v0.3.2", shell_output("#{bin}/obsi --version")
+    assert_match "v0.3.3", shell_output("#{bin}/obsi --version")
   end
 end
