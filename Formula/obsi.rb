@@ -5,12 +5,12 @@
 class Obsi < Formula
   desc "CLI for Obsidian note-taking with Quick Notes support"
   homepage "https://github.com/avi8or/obsidian-cli-quick-notes"
-  version "0.3.6"
+  version "0.3.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v0.3.6/obsidian-cli-quick-notes_0.3.6_darwin_amd64.tar.gz"
-      sha256 "ac7b5d5f208518ed820bcea43e9166dbe7336bf815a1c0a1f1450f64c5036475"
+      url "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v0.3.7/obsidian-cli-quick-notes_0.3.7_darwin_amd64.tar.gz"
+      sha256 "f37410f3811703f6e17bc5c74aeca9744a58df9511cd4597767be13cbbe96109"
 
       def install
         bin.install "obsidian-cli" => "obsi"
@@ -18,8 +18,8 @@ class Obsi < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v0.3.6/obsidian-cli-quick-notes_0.3.6_darwin_arm64.tar.gz"
-      sha256 "871f374543c540f4a063041c03300bf71788144ed8e7a6742b9b3cef6a47fc22"
+      url "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v0.3.7/obsidian-cli-quick-notes_0.3.7_darwin_arm64.tar.gz"
+      sha256 "8f355bac312060cd2ed3a9a81af52316002b71908589b6ca85fae0dac7aef898"
 
       def install
         bin.install "obsidian-cli" => "obsi"
@@ -30,16 +30,16 @@ class Obsi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v0.3.6/obsidian-cli-quick-notes_0.3.6_linux_amd64.tar.gz"
-      sha256 "2a016d20a1edbc28dd74fdff0b592e259ca49be0352db11263b0dc5edb4deb57"
+      url "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v0.3.7/obsidian-cli-quick-notes_0.3.7_linux_amd64.tar.gz"
+      sha256 "d579b9b157d1463c716f24d46534a130c4a9c07ee21a42ea360f1ab7b38436be"
       def install
         bin.install "obsidian-cli" => "obsi"
         bin.install_symlink "obsi" => "obsidian-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v0.3.6/obsidian-cli-quick-notes_0.3.6_linux_arm64.tar.gz"
-      sha256 "cecc3a5e0c9248f1f4f09f8ae86afcff3d91517d8909149d573ce348a645b9d0"
+      url "https://github.com/avi8or/obsidian-cli-quick-notes/releases/download/v0.3.7/obsidian-cli-quick-notes_0.3.7_linux_arm64.tar.gz"
+      sha256 "ee7821f815257645a729e0bcb4322fa4d8c392e94f5ac473b170c8e2b9bf53c8"
       def install
         bin.install "obsidian-cli" => "obsi"
         bin.install_symlink "obsi" => "obsidian-cli"
